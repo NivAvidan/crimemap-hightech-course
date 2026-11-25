@@ -3,3 +3,4 @@ dist/
 server/geo/signals-cache.json
 *.log
 .DS_Store
+.env

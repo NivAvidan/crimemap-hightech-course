@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState, useCallback } from 'react';
 import MapView from './MapView.jsx';
 import DetailView from './DetailView.jsx';
+import ChatWidget from './ChatWidget.jsx';
 import { Filters, Search, Legend, Kpis, InfoPanel, Icon } from './Panels.jsx';
 import { api, toQuery, fmt, NA } from './api.js';
 
@@ -140,6 +141,7 @@ export default function App() {
             onBack={() => setView('map')} onSelect={(s) => select(s)} onFilterUnmapped={filterUnmapped} />
         )}
       </main>
+      <ChatWidget />
     </div>
   );
 }
